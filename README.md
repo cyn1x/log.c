@@ -1,6 +1,6 @@
 <div align="center">
 
-# logc
+# log.c
 Simple cross-platform logging library with thread safety written in C.
 
 </div>
