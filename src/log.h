@@ -8,6 +8,10 @@
 #include <stddef.h>
 #endif
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 typedef enum {
     LOG_TRACE,
     LOG_DEBUG,
@@ -31,5 +35,9 @@ void log_log(log_level_t level, const char *file, int line, const char *format,
              ...);
 void log_set_lock(log_lock_t lock_fn);
 void log_set_level(log_level_t level);
+
+#ifdef __cplusplus
+}
+#endif // __cplusplus
 
 #endif // LOG_H
